@@ -1,9 +1,13 @@
 # define our source to loook for gems
-source "http://rubygems.org/"
+source "http://ruby.taobao.org"
 
 # declare the sinatra dependency
 gem "sinatra", "~> 1.4.2"
 gem "mongoid", ">= 3.0.5"
+gem "unicorn"
+gem "capistrano"
+gem 'capistrano-ext'
+gem 'rvm-capistrano'
 
 # setup our test group and require rspec
 group :test do
