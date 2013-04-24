@@ -18,6 +18,10 @@ class EngzoStats < Sinatra::Base
     enable :logging
   end
 
+  get '/' do
+    'hello, world'
+  end
+  
   post '/userevents' do
     data = JSON.parse(request.body.read)
     logger.info data
