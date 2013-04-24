@@ -5,9 +5,9 @@ source "http://ruby.taobao.org"
 gem "sinatra", "~> 1.4.2"
 gem "mongoid", ">= 3.0.5"
 gem "unicorn"
-gem "capistrano"
+gem "capistrano", "~> 2.14.2"
 gem 'capistrano-ext'
-gem 'rvm-capistrano'
+gem 'rvm-capistrano', "~> 1.2.7"
 
 # setup our test group and require rspec
 group :test do
